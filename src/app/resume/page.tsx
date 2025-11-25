@@ -32,7 +32,7 @@ export default function ResumePage() {
         <Button
           variant="primary"
           size="m"
-          href="/resume_final.pdf"
+          href="/Aref_Rezai_Resume.pdf"
           download="Aref-Rezai-Resume.pdf"
         >
           Download PDF
@@ -42,7 +42,7 @@ export default function ResumePage() {
       {/* PDF Viewer */}
       <Row fillWidth fillHeight style={{ flex: 1 }}>
         <iframe
-          src="/resume_final.pdf"
+          src="/Aref_Rezai_Resume.pdf"
           style={{
             width: "100%",
             height: "100%",
