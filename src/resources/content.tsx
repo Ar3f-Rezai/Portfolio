@@ -15,7 +15,7 @@ const person: Person = {
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>My weekly newsletter about creativity and cybersecurity</>,
 };
 
 const social: Social = [
@@ -25,25 +25,25 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/",
     essential: false,
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.com/",
     essential: true,
   },
   {
@@ -60,12 +60,12 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Aref Rezai Portfolio</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">George Brown College</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
@@ -76,14 +76,9 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Aref Rezai, Cybersecurity Student at George Brown College
+      , And This is my Portfolio
+      <br /> Here, You can find more about my Projects and my educational background
     </>
   ),
 };
@@ -101,7 +96,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -109,9 +104,10 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Aref is a Toronto-based IT Technician and aspiring SOC analyst with a passion
+        for transforming complex security challenges into clear, actionable solutions.
+        His work spans network configuration, system troubleshooting, and cybersecurity, with hands-on
+        experience in SIEM tools, incident response, and digital forensics.
       </>
     ),
   },
@@ -120,41 +116,39 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "DYNEX TECHNOLOGIES",
+        timeframe: "Apr 2025 – Aug 2025",
+        role: "MATERIAL HANDLER",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Inspected incoming and outgoing goods for quality and quantity
+            against purchase orders and shipping
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Managed and organized inventory for a fast-paced warehouse, and 
+            Collaborated with team members to optimize storage solutions and improve material flow
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
-        company: "Creativ3",
+        company: "EasyTech4Business Inc",
         timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        role: "IT TECHNICIAN",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Configured and optimized network systems, 
+            enhancing data transmission efficiency and significantly improving user experience.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Installed, terminated, and tested Ethernet (Cat6) cabling, including RJ45
+            connectors and keystone jacks, for residential and commercial data/voice networks.
+          </>,
+          <>
+            Performed comprehensive hardware and software troubleshooting to diagnose and resolve system issues, 
+            ensuring optimal performance and minimal downtime.
           </>,
         ],
         images: [],
@@ -166,77 +160,119 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "George Brown College",
+        description: <>CYBERSECURITY (POSTGRADUATE CERTIFICATE)</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "George Brown College",
+        description: <>CLOUD COMPUTING TECHNOLOGIES (POSTGRADUATE CERTIFICATE)</>,
+      },
+       {
+        name: "George Brown College",
+        description: <>COMPUTER SYSTEMS TECHNOLOGY (3 YEARS ADVANCED DIPLOMA)</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },  
-    ],
-  },
+  display: true, // set to false to hide this section
+  title: "Technical Skills",
+  skills: [
+    {
+      title: "SIEM Tools",
+      description: (
+        <>Experience with Security Information and Event Management (SIEM) tools for monitoring and analyzing security events.</>
+      ),
+      tags: [
+        { name: "SIEM", icon: "siem" },
+        { name: "Splunk", icon: "splunk" },
+        { name: "LogRhythm", icon: "logrhythm" },
+      ],
+      images: [],
+    },
+    {
+      title: "Endpoint Detection & Response (EDR) Tools",
+      description: (
+        <>Hands-on experience with EDR solutions for detecting, investigating, and responding to endpoint threats.</>
+      ),
+      tags: [
+        { name: "EDR", icon: "edr" },
+        { name: "CrowdStrike", icon: "crowdstrike" },
+        { name: "SentinelOne", icon: "sentinelone" },
+      ],
+      images: [],
+    },
+    {
+      title: "Incident Response and Triage",
+      description: (
+        <>Skilled in incident response processes, triaging alerts, and coordinating remediation actions.</>
+      ),
+      tags: [
+        { name: "Incident Response", icon: "incident" },
+        { name: "Triage", icon: "triage" },
+        { name: "Forensics", icon: "forensics" },
+      ],
+      images: [],
+    },
+    {
+      title: "Malware & Network Attack Analysis",
+      description: (
+        <>Understanding of malware behavior, network attack vectors, and threat analysis techniques.</>
+      ),
+      tags: [
+        { name: "Malware Analysis", icon: "malware" },
+        { name: "Network Security", icon: "network" },
+        { name: "Threat Hunting", icon: "threat" },
+      ],
+      images: [],
+    },
+    {
+      title: "DDoS Attack Concepts",
+      description: (
+        <>Knowledge of Distributed Denial-of-Service (DDoS) attack types, mitigation strategies, and defense techniques.</>
+      ),
+      tags: [
+        { name: "DDoS", icon: "ddos" },
+        { name: "Mitigation", icon: "firewall" },
+      ],
+      images: [],
+    },
+    {
+      title: "Basic Scripting (Python)",
+      description: (
+        <>Proficient in Python scripting for automating security tasks, data analysis, and vulnerability assessments.</>
+      ),
+      tags: [
+        { name: "Python", icon: "python" },
+        { name: "Automation", icon: "automation" },
+      ],
+      images: [],
+    },
+    {
+      title: "Web Application Security",
+      description: (
+        <>Understanding of web app vulnerabilities such as SQL Injection, XSS, and secure coding practices.</>
+      ),
+      tags: [
+        { name: "SQL Injection", icon: "sql" },
+        { name: "XSS", icon: "xss" },
+        { name: "Secure Coding", icon: "web" },
+      ],
+      images: [],
+    },
+    {
+      title: "Cloud Technologies & Security",
+      description: (
+        <>Experience with cloud platforms, cloud security best practices, and securing cloud infrastructure.</>
+      ),
+      tags: [
+        { name: "Cloud", icon: "cloud" },
+        { name: "AWS", icon: "aws" },
+        { name: "Azure", icon: "azure" },
+      ],
+      images: [],
+    },
+  ],
+},
 };
 
 const blog: Blog = {
@@ -309,4 +345,5 @@ const gallery: Gallery = {
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
+
 
