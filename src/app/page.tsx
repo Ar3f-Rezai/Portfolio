@@ -85,13 +85,15 @@ export default function Home() {
               weight="strong"
               arrowIcon
             >
-              <Row gap="8" vertical="center" paddingRight="4">
+              <Row gap="20" vertical="center" paddingRight="4">
                 {about.avatar.display && (
                   <Avatar
                     marginRight="8"
-                    style={{ marginLeft: "-0.75rem" }}
+                    style={{ marginLeft: "-0.75rem",
+                      transform: "scale(1.8)",
+                    }}
                     src={person.avatar}
-                    size="xl"
+                    size="l"
                   />
                 )}
                 {about.title}
@@ -128,4 +130,5 @@ export default function Home() {
     </Column>
   );
 }
+
 
