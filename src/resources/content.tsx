@@ -108,12 +108,14 @@ const about: About = {
     for transforming complex security challenges into clear, actionable solutions.
     His work spans network configuration, system troubleshooting, and cybersecurity, with hands-on
     experience in SIEM tools, incident response, and digital forensics.
+
     <br />
     <br />
     <div>
-      <strong>
-        Work samples are available on my GitHub page. It can be accessed by clicking the GitHub Button on top.
+      <strong style={{ fontSize: "1.6rem" }}>
+        Work samples{" "}
       </strong>
+       are available on my GitHub page. It can be accessed by clicking the GitHub Button on top.
     </div>
     </>
     ),
@@ -352,6 +354,7 @@ const gallery: Gallery = {
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
+
 
 
 
