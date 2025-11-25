@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Aref",
   lastName: "Rezai",
   name: `Aref Rezai`,
-  role: "Student",
+  role: "Student at George Brown College",
   avatar: "/images/avatar.jpg",
   email: "aref.rezaie@gmail.com",
   location: "America/Toronto", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -60,7 +60,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Aref Rezai Portfolio</>,
+  headline: <>Aref Rezai's Portfolio</>,
   featured: {
     display: false,
     title: (
@@ -353,6 +353,7 @@ const gallery: Gallery = {
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
+
 
 
 
