@@ -109,6 +109,25 @@ export const Header = () => {
                   </Row>
                 </>
               )}
+              {routes["/resume"] && (
+  <>
+    <Row s={{ hide: true }}>
+      <ToggleButton
+        prefixIcon="document" // You can choose any icon
+        href="/resume"
+        label="Resume"
+        selected={pathname === "/resume"}
+      />
+    </Row>
+    <Row hide s={{ hide: false }}>
+      <ToggleButton
+        prefixIcon="document"
+        href="/resume"
+        selected={pathname === "/resume"}
+      />
+    </Row>
+  </>
+)}
               {routes["/work"] && (
                 <>
                   <Row s={{ hide: true }}>
@@ -192,3 +211,4 @@ export const Header = () => {
     </>
   );
 };
+
