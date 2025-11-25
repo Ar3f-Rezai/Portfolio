@@ -25,7 +25,7 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com",
+    link: "https://github.com/Ar3f-Rezai",
     essential: true,
   },
   {
@@ -345,5 +345,6 @@ const gallery: Gallery = {
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
+
 
 
