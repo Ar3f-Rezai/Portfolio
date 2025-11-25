@@ -76,10 +76,9 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Aref Rezai, Cybersecurity Student at George Brown College
-      , And This is my Portfolio
-      <br /> Here, You can find more about my Projects and my educational background
-    </>
+  I'm Aref Rezai, a Cybersecurity Student at George Brown College, and this is my Portfolio.
+  <br />Here, you can learn more about my Projects and Educational Background.
+  </>
   ),
 };
 
@@ -354,6 +353,7 @@ const gallery: Gallery = {
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
+
 
 
 
