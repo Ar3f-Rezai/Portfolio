@@ -81,7 +81,7 @@ export default function Home() {
               data-border="rounded"
               href={about.path}
               variant="secondary"
-              size="xl"
+              size="l"
               weight="strong"
               arrowIcon
             >
@@ -128,3 +128,4 @@ export default function Home() {
     </Column>
   );
 }
+
