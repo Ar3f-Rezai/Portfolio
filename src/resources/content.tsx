@@ -103,12 +103,19 @@ const about: About = {
     display: true,
     title: "Introduction",
     description: (
-      <>
-        Aref is a Toronto-based IT Technician and aspiring SOC analyst with a passion
-        for transforming complex security challenges into clear, actionable solutions.
-        His work spans network configuration, system troubleshooting, and cybersecurity, with hands-on
-        experience in SIEM tools, incident response, and digital forensics.
-      </>
+    <>
+    Aref is a Toronto-based IT Technician and aspiring SOC analyst with a passion
+    for transforming complex security challenges into clear, actionable solutions.
+    His work spans network configuration, system troubleshooting, and cybersecurity, with hands-on
+    experience in SIEM tools, incident response, and digital forensics.
+    <br />
+    <br />
+    <div>
+      <strong>
+        Work samples are available on my GitHub page. It can be accessed by clicking the GitHub Button on top.
+      </strong>
+    </div>
+    </>
     ),
   },
   work: {
@@ -345,6 +352,7 @@ const gallery: Gallery = {
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
+
 
 
 
