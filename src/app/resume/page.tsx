@@ -9,7 +9,7 @@ export default function ResumePage() {
       fillWidth
       fillHeight
       style={{
-        width: "50vw",
+        width: "85vw",
         height: "100vh",
         padding: 0,
         margin: 0,
