@@ -31,7 +31,7 @@ const social: Social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/aref-rezai-854530b1/",
     essential: true,
   },
   {
